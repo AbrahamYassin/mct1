@@ -1,7 +1,7 @@
-import { connectDB } from '@/lib/db.mjs'
-import Cv from '@/models/Cv.mjs'
-import { getUserIdFromCookie } from '@/lib/auth.mjs'
-import { cloudEnabled, configCloudinary } from '@/lib/cloud.mjs'
+import { connectDB } from '@/lib/db'
+import Cv from '@/models/Cv'
+import { getUserIdFromCookie } from '@/lib/auth'
+import { cloudEnabled, configCloudinary } from '@/lib/cloud'
 
 export async function POST(req, { params }) {
   await connectDB()

@@ -1,7 +1,7 @@
-import { connectDB } from '@/lib/db.mjs'
-import User from '@/models/User.mjs'
+import { connectDB } from '@/lib/db'
+import User from '@/models/User'
 import bcrypt from 'bcryptjs'
-import { signJWT } from '@/lib/jwt.mjs'
+import { signJWT } from '@/lib/jwt'
 import { cookies } from 'next/headers'
 
 export async function POST(req) {

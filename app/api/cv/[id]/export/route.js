@@ -1,6 +1,6 @@
-import { connectDB } from '@/lib/db.mjs'
-import Cv from '@/models/Cv.mjs'
-import { getUserIdFromCookie } from '@/lib/auth.mjs'
+import { connectDB } from '@/lib/db'
+import Cv from '@/models/Cv'
+import { getUserIdFromCookie } from '@/lib/auth'
 
 function renderBasic(cv){return `
 <style>:root{--c:${cv.themeColor||'#2563eb'}}body{font-family:Arial,sans-serif;max-width:800px;margin:0 auto;padding:24px}header{display:flex;gap:16px;align-items:center;border-bottom:2px solid var(--c);padding-bottom:12px}img.avatar{width:90px;height:90px;object-fit:cover;border-radius:50%}h1{margin:0}h2{margin-top:18px;color:var(--c)}.muted{color:#475569}.chips span{display:inline-block;margin:4px 6px;padding:4px 8px;border:1px solid #e2e8f0;border-radius:9999px}a{color:var(--c)}</style>

@@ -1,6 +1,6 @@
-import { connectDB } from '@/lib/db.mjs'
-import Cv from '@/models/Cv.mjs'
-import { getUserIdFromCookie } from '@/lib/auth.mjs'
+import { connectDB } from '@/lib/db'
+import Cv from '@/models/Cv'
+import { getUserIdFromCookie } from '@/lib/auth'
 
 export async function GET(_, { params }) {
   await connectDB()
